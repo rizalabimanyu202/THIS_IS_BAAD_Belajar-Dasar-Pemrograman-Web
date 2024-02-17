@@ -1,0 +1,395 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#empty{
+    display: none;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    padding: 0px 30px;
+    align-items: center;
+    justify-content: space-between;
+    color:azure;
+    background-color: black;
+}
+
+header h1 a{
+    text-decoration: none;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(255, 255, 255);
+    color: black;
+    font-style: italic;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+nav #ul1{
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+}
+
+nav #ul1 li{
+    display: flex;
+    flex-direction: row;
+}
+
+nav #ul1 li a{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 17px;
+    font-family: monospace;
+    align-self: center;
+    padding: 23px 0px;
+}
+
+nav #ul1 li a:hover{
+    border-bottom: 4px red solid;
+}
+
+nav #ul1 li button{
+    background-color: transparent;
+    border: 0;
+}
+
+nav #ul1 li button:hover{
+    border-bottom: 4px red solid;
+}
+
+nav #ul1 li button img{
+    width: 50px;
+}
+
+header .ul2_2{
+    opacity: 0%;
+}
+
+header .ul2_2, nav .ul2{
+    display: none;
+}
+
+header .ul2_2 li, nav .ul2 li{
+    list-style-type: none;
+}
+
+header .ul2_2 li button, nav .ul2 li button{
+    list-style-type: none;
+    background-color: transparent;
+    border: 0;
+}
+
+#navger{
+    display: flex;
+    flex-direction: row-reverse;
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    transform: translate(100%, 0%);
+}
+
+#navger #ul1_2{
+    width: 50%;
+    list-style-type: none;
+    background-color: rgb(0, 0, 0);
+    border-left: 2px solid red;
+}
+
+#navger #ul2_2{
+    width: 50%;
+    list-style-type: none;
+    background-color: rgba(0, 0, 0, 0.593);
+}
+
+#navger #ul1_2 li{
+    padding: 20px 0px;
+}
+
+#navger #ul1_2 li a{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 17px;
+    font-family: monospace;
+    align-self: center;
+    padding: 10px 20px;
+}
+
+#navger #ul1_2 li a:hover{
+    border-left: 4px red solid;
+}
+
+#navger #ul1_2 .buttonModeDark{
+    font-family: monospace;
+    background-color: transparent;
+    border: 0;
+    padding: 10px 20px;
+    font-size: 17px;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+#navger #ul1_2 .buttonModeDark:hover{
+    border-left: 4px red solid;
+}
+
+#navger #ul1_2 ul{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+#navger #ul1_2 ul{
+    justify-content: end;
+    list-style-type: none;
+}
+
+#navger #ul1_2 li #buttonX{
+    font-family: monospace;
+    background-color: transparent;
+    border: 0;
+    padding: 0px 20px;
+    font-size: 30px;
+    color: aliceblue;
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+#container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    padding-top: 90px;
+}
+
+#left{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    gap: 25px;
+}
+
+#container #profile, #container #album, #container #single{
+    display: flex;
+    flex-direction: column;
+    border: 2px black solid;
+    border-radius: 10px;
+}
+
+#container #profile .title, #container #album .title, #container #single .title{
+    margin: auto;
+    padding: 10px;
+    font-family: monospace
+}
+
+#container #profile div, #container #album div, #container #single div{
+    display: flex;
+    flex-direction: row;
+    border-top: 2px solid black;
+    padding: 20px;
+    gap: 20px;
+    font-family: monospace;
+}
+
+#container #profile div img{
+    width: 250px;
+    height: 250px;
+    border-radius: 20px;
+}
+
+#container #profile div article{
+    text-align: justify;
+    line-height: 21px;
+    font-size: 15px;
+    text-indent: 30px;
+}
+
+#container #album div img, #container #single div img{
+    width: 250px;
+    height: 250px;
+    border-radius: 20px;
+}
+
+#container #album div article, #container #single div article{
+    text-align: justify;
+    line-height: 21px;
+    font-size: 15px;
+}
+
+ol{
+    padding-left: 25px;
+}
+
+aside{
+    display: flex;
+    flex-direction: column;
+    width: 28%;
+    border: 2px solid black;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+aside h2{
+    font-family: monospace;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+aside div{
+    display: flex;
+    flex-direction: column;
+    border-top: 2px black solid;
+}
+
+aside div img{
+    padding: 20px;
+    border-radius: 40px;
+}
+
+table{
+    margin: 0 auto;
+    display: flex;
+    letter-spacing: 2px;
+    font-family: monospace;
+    padding-bottom: 10px;
+    align-items: center;
+}
+
+table th{
+    padding: 10px 0px;
+    text-align: start;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100px;
+    font-family: monospace;
+    background-color: black;
+    color:aliceblue;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 1024px){
+    #container{
+        flex-direction: column;
+        gap: 30px
+    }
+
+    #left{
+        width: 100%;
+    }
+
+    aside{
+        width: 100%;
+    }
+
+    aside div{
+        display: flex;
+        flex-direction: row;
+        border-top: 2px black solid;
+    }
+
+    aside img{
+        width: 250px;
+        height: 250px;
+        border-radius: 20px;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 820px){
+    #empty{
+        display: block;
+    }
+
+    nav #ul1{
+        display: none;
+    }
+
+    header .ul2_2, nav .ul2{
+        display: block;
+    }
+
+    header .ul2_2 img, nav .ul2 img{
+        width: 40px;
+    }
+
+    #container #profile div, #container #album div, #container #single div{
+        flex-direction: column;
+    }
+    
+    #container #profile div img{
+        margin: auto;
+    }
+
+    #container #album div img, #container #single div img{
+        margin: auto;
+    }
+
+    #container #album div article h2, #container #single div article h2{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 500px){
+    header .ul2_2{
+        display: none;
+    }
+
+    aside div{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 430px){
+    header h1{
+        font-size:larger;
+    }
+
+    #container #profile div img{
+        width: 180px;
+        height: 180px;
+        border-radius: 10px;
+    }
+
+    #container #album div img, #container #single div img{
+        width: 180px;
+        height: 180px;
+        border-radius: 10px;
+    }
+    
+    footer{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 300px){
+    header h1{
+        font-size: medium;
+    }
+
+    header .ul2_2 li button img, nav .ul2 li button img{
+        width: 30px;
+    }
+
+    aside div img{
+        width: 200px;
+        height: 200px;
+    }
+
+    footer{
+        font-size: 10px;
+    }
+}
